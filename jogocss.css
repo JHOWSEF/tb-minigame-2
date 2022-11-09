@@ -1,0 +1,138 @@
+.fundo {
+     position: relative;
+     width: 75vw;
+     height: 30vw;
+     margin-left: auto;
+     margin-right: auto;
+     overflow: hidden;
+     background-image: url(./imagens/star.gif);
+     background-size: 100% 100%;
+     text-align: center;
+     border: solid black 10px;
+	}
+.painel {
+    position: relative;
+    top: 1vw;
+     height: 10vw;
+     width: 25vw;
+     margin-left: auto;
+     margin-right:auto;
+     border-radius: 10px;
+     border: 1px solid black;
+     text-align: center;
+     background-color: black;
+
+}  
+
+
+body{
+    background: linear-gradient(
+        0deg,
+        rgb(91, 23, 186) 0%,
+        rgb(92, 9, 174)100%
+    );
+}
+#esquerda{
+background-image: url(./imagens/seta.png);
+background-size: 100% 100%;
+background-color: greenyellow;
+}
+#direita{
+background-image: url(./imagens/seta2.png);
+background-size: 100% 100%;
+background-color: rgb(0, 115, 255);
+
+}
+#atirar{
+    background-image: url(./imagens/botaotiro.png);
+    background-size: 100% 100%;
+    background-color: red;
+
+}
+
+button{
+    margin-top: 9%;
+    width: 7vw;
+    height: 4.5vw;
+    border-radius: 20vw;
+}
+
+.bullets {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 4vw;
+    height: 2vw;
+    background: url("./imagens/bmo.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .rocks {
+    position: absolute;
+    top: 0px;
+    width: 6vw;
+    height: 4vw;
+    background: url("./imagens/sword.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+   #div1 {
+    position: absolute;
+    top: 26.7vw;
+    left: 15vw; 
+    width: 4vw; 
+    height: 4vw; 
+    background: url(./imagens/jake2.gif);
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.nuvens{
+    position: absolute;
+    top: 0;
+    width: 25vw;
+    height: 15vw;
+    animation: nuvem 4s infinite linear;
+}
+
+@keyframes nuvem{
+
+from {
+    right: -20vw;
+}
+
+to{
+    right: 70vw;
+}
+}
+.marc{
+    position: absolute;
+    top: 0;
+    width: 7vw;
+    height: 3vw;
+    animation:vampiro 10s ;
+}
+@keyframes vampiro{
+    from{
+        right: 70vw;
+    }
+    to{
+        right: -20vw;
+    }
+}
+
+#points{
+    position: absolute;
+    top: 1vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    font-size: 4vw;
+    color: rgb(222, 188, 17);
+    background-color: black;
+}
