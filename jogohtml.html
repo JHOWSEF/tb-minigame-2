@@ -1,0 +1,51 @@
+<!DOCTYPE >
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAKE'S DREAM</title>
+    <link rel="stylesheet" href="jogocss.css">
+	<link rel="manifest" href="./manifest.json">
+
+
+	<script>
+		if ('serviceWorker' in navigator) {
+		  navigator.serviceWorker.register('./sw.js')
+			 .then(function () {console.log('service worker registered');})
+			 .catch(function () {console.log('service worker failed'); });
+		}
+	  </script>
+
+
+    </head>
+	<body>
+		<div class="fundo" id="fundo">
+
+			<div class="dica">Dicas: 
+				<p>Clique o botão 'start' na direita da tela para começar</p>
+				<p>objetivo:</p>
+				<p>Ao iniciar não deixe que as espadas cortem o chão</p>
+				<p>controles--></p>
+				<p>Descktop: use as setas do teclado para interagir </p>
+				<p>Mobile: use os botões presentes na tela</p>
+			</div>
+		<div class="rocks"></div>
+
+		<div id="div1"></div>
+
+        
+		<img src="./imagens/marc.gif" class="marc" alt="marc">
+
+	</div>
+
+			
+				<button type="button"  id="esquerda"></button>
+				<button type="button"  id="atirar"></button>
+				<button type="button"  id="direita" ></button>		
+			    <button type="button" id="start" class="start"></button>
+				<button type="button" id="reset" class="reset"></button>
+
+			<div id="points">0</div>
+		<script src="jogojs.js"></script>
+	</body>
+</html>
